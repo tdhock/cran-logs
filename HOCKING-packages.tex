@@ -1,0 +1,43 @@
+\documentclass[a4paper]{article}
+\usepackage[cm]{fullpage}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\begin{document}
+
+\title{Package downloads}
+\author{Toby Dylan Hocking}
+\maketitle
+
+\section{Introduction}
+
+Log files were downloaded from
+\url{http://cran-logs.rstudio.com/}. These files log ONLY the
+downloads from ONE of the several dozen CRAN servers.
+
+The point of this analysis is to estimate the usage of some of my
+packages.
+
+\newpage
+
+\section{Initial analysis}
+
+I plot the total number of downloads per day over time for several
+packages.
+
+\includegraphics[width=\textwidth]{figure-time-series}
+
+\includegraphics[width=\textwidth]{figure-time-series-zoom}
+
+These plots show a weak signal that directlabels may be more popular
+than inlinedocs, but the only clear trend is that ggplot2 has an order
+of magnitude more downloads. You can even see that people use it
+during the work week!
+
+There are some common patterns in each of the bottom 5 unpopular
+packages. This suggests a normalization or background subtraction
+procedure may be necessary to get an accurate estimate of the number
+of real users.
+
+
+\end{document}
